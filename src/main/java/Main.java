@@ -34,12 +34,14 @@ public class Main {
         System.out.println(b % a);
 
         // 9
-        if (a == b) {
-            System.out.println("a equals b");
-        }
-        if (a != b) {
-            System.out.println("a doesn't equal b");
-        }
+        // short if
+        System.out.println((a == b) ? "a equals b" : "a doesn't equal b");
+//        if (a == b) {
+//            System.out.println("a equals b");
+//        }
+//        if (a != b) {
+//            System.out.println("a doesn't equal b");
+//        }
 
         // 10
         boolean is = true;
@@ -95,6 +97,11 @@ public class Main {
         // 19
         for (int i = 1; i <= 10; i++) {
             System.out.print(i + " ");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException interruptedException) {
+                interruptedException.printStackTrace();
+            }
         }
 
         System.out.println();
