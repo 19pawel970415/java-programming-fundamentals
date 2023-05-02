@@ -2,186 +2,257 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 1
-        System.out.println("Hello");
-
-        // 2
-        String name = "Paul";
-        System.out.println("Hello " + name);
-
-        // 3
-        int a = 5;
-        int b = 8;
-        System.out.println(a + b);
-
-        // 4
-        float c = 5f;
-        float d = 7.5f;
-        System.out.println(c + d);
-
-        // 5
-        double e = 5d;
-        double f = 6.324214d;
-        System.out.println(e + f);
-
-        // 6
-        System.out.println(e * f);
-
-        // 7
-        System.out.println(b / a);
-
-        // 8
-        System.out.println(b % a);
-
-        // 9
-        // short if
-        System.out.println((a == b) ? "a equals b" : "a doesn't equal b");
-//        if (a == b) {
-//            System.out.println("a equals b");
+//        // 1
+//        System.out.println("Hello");
+//
+//        // 2
+//        String name = "Paul";
+//        System.out.println("Hello " + name);
+//
+//        // 3
+//        int a = 5;
+//        int b = 8;
+//        System.out.println(a + b);
+//
+//        // 4
+//        float c = 5f;
+//        float d = 7.5f;
+//        System.out.println(c + d);
+//
+//        // 5
+//        double e = 5d;
+//        double f = 6.324214d;
+//        System.out.println(e + f);
+//
+//        // 6
+//        System.out.println(e * f);
+//
+//        // 7
+//        System.out.println(b / a);
+//
+//        // 8
+//        System.out.println(b % a);
+//
+//        // 9
+//        // short if
+//        System.out.println((a == b) ? "a equals b" : "a doesn't equal b");
+////        if (a == b) {
+////            System.out.println("a equals b");
+////        }
+////        if (a != b) {
+////            System.out.println("a doesn't equal b");
+////        }
+//
+//        // 10
+//        boolean is = true;
+//        boolean isNot = false;
+//        if (is == isNot) {
+//            System.out.println("That's true");
+//        } else {
+//            System.out.println("That's not true");
 //        }
-//        if (a != b) {
-//            System.out.println("a doesn't equal b");
+//
+//        // 11 and 12
+//        float g = b;
+//        int h = (int) d;
+//        System.out.println(g);
+//        System.out.println(h);
+//
+//        // 13 and 14 and 15
+//        float temperature = 38.5f;
+//        if (temperature > 37.5) {
+//            System.out.println("U should definitely c a doc");
+//        } else if (temperature < 36) {
+//            System.out.println("The temperature is too low");
+//        } else {
+//            System.out.println("Ur fine");
 //        }
+//
+//        // 17
+//        float price = 5500f;
+//        if (price > 6000) {
+//            System.out.println("It's too expensive, not gonna buy it");
+//        } else if (price < 4000) {
+//            System.out.println("I'll definitely buy it");
+//        } else {
+//            System.out.println("I'll consider buying it");
+//        }
+//
+//        // 18
+//        String personName = "Kate";
+//        switch (personName) {
+//            case "Mike":
+//                System.out.println("Hello Mike");
+//                break;
+//            case "John":
+//                System.out.println("Hello John");
+//                break;
+//            case "Kate":
+//                System.out.println("Hello Kate");
+//                break;
+//            default:
+//                System.out.println("Hello someone");
+//        }
+//
+//        // 19
+//        for (int i = 1; i <= 10; i++) {
+//            System.out.print(i + " ");
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException interruptedException) {
+//                interruptedException.printStackTrace();
+//            }
+//        }
+//
+//        System.out.println();
+//
+//        // 20
+//        for (int i = 0; i <= 20; i++) {
+//            System.out.print(i + " ");
+//        }
+//
+//        System.out.println();
+//
+//        // 21
+//        for (int i = 10; i >= 1; i--) {
+//            System.out.print(i + " ");
+//        }
+//
+//        System.out.println();
+//
+//        // 22
+//        int i = 1;
+//
+//        while (i <= 10) {
+//            System.out.print(i + " ");
+//            i++;
+//        }
+//
+//        System.out.println();
+//
+//        // 23
+//        i = 1;
+//
+//        while (i <= 10) {
+//            System.out.print(i + " ");
+//            if (i == 5) {
+//                break;
+//            }
+//            i++;
+//        }
+//
+//        System.out.println();
+//
+//        // 24
+//        String[] names = {"Paul", "Martin", "James", "Eve", "Lucy"};
+//        for (String n :
+//                names) {
+//            System.out.println("Hello " + n);
+//        }
+//
+//        // 25
+//        for (int j = 0; j < names.length; j++) {
+//            System.out.println(names[j]);
+//        }
+//
+//        // 26
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter your name:");
+//        String input = scanner.nextLine();
+//        System.out.println("Hello " + input);
+//
+//        // 27
+//        Scanner scanner1 = new Scanner(System.in);
+//        System.out.println("Enter a number:");
+//        int number = scanner1.nextInt();
+//        if (number > 200) {
+//            System.out.println("It's a huge number");
+//        } else if (number < 100) {
+//            System.out.println("It's a small number");
+//        } else {
+//            System.out.println("It's neither huge nor small");
+//        }
+//
+//        // 28
+//        printHello();
+//
+//        // 29
+//        printHelloSb(input);
+//
+//        // 30
+//        String toPrint = printHelloSbReturnString("Tom");
+//        System.out.println(toPrint);
 
-        // 10
-        boolean is = true;
-        boolean isNot = false;
-        if (is == isNot) {
-            System.out.println("That's true");
-        } else {
-            System.out.println("That's not true");
-        }
+        // card
+        for (int j = 0; j < 7; j++) {
+            for (int k = 0; k < 28; k++) {
+                if (j == 0) {
+                    if (k == 0) {
+                        System.out.print("/");
+                    } else if (k == 27) {
+                        System.out.println("\\");
+                    } else if (k == 27) {
+                        System.out.println("-");
+                    } else {
+                        System.out.print("-");
+                    }
+                } else if (j == 6) {
+                    if (k == 0) {
+                        System.out.print("\\");
+                    } else if (k == 27) {
+                        System.out.println("/");
+                    } else if (k == 27) {
+                        System.out.println("-");
+                    } else {
+                        System.out.print("-");
+                    }
+                } else if (j == 2) {
 
-        // 11 and 12
-        float g = b;
-        int h = (int) d;
-        System.out.println(g);
-        System.out.println(h);
+                    if (k == 0) {
+                        System.out.print("|");
+                    } else if (k == 27) {
+                        System.out.println("|");
+                    } else if (k == 7) {
+                        System.out.print("Paweł Żurawski");
+                    } else if (k != 0 && k != 27 && (k < 7 || k > 20)) {
+                        System.out.print(" ");
+                    }
 
-        // 13 and 14 and 15
-        float temperature = 38.5f;
-        if (temperature > 37.5) {
-            System.out.println("U should definitely c a doc");
-        } else if (temperature < 36) {
-            System.out.println("The temperature is too low");
-        } else {
-            System.out.println("Ur fine");
-        }
+                } else if (j == 3) {
 
-        // 17
-        float price = 5500f;
-        if (price > 6000) {
-            System.out.println("It's too expensive, not gonna buy it");
-        } else if (price < 4000) {
-            System.out.println("I'll definitely buy it");
-        } else {
-            System.out.println("I'll consider buying it");
-        }
+                    if (k == 0) {
+                        System.out.print("|");
+                    } else if (k == 27) {
+                        System.out.println("|");
+                    } else if (k == 5) {
+                        System.out.print("ul. Zachodnia 8/15");
+                    } else if (k != 0 && k != 27 && (k < 5 || k > 22)) {
+                        System.out.print(" ");
+                    }
 
-        // 18
-        String personName = "Kate";
-        switch (personName) {
-            case "Mike":
-                System.out.println("Hello Mike");
-                break;
-            case "John":
-                System.out.println("Hello John");
-                break;
-            case "Kate":
-                System.out.println("Hello Kate");
-                break;
-            default:
-                System.out.println("Hello someone");
-        }
+                } else if (j == 4) {
 
-        // 19
-        for (int i = 1; i <= 10; i++) {
-            System.out.print(i + " ");
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException interruptedException) {
-                interruptedException.printStackTrace();
+                    if (k == 0) {
+                        System.out.print("|");
+                    } else if (k == 27) {
+                        System.out.println("|");
+                    } else if (k == 8) {
+                        System.out.print("91-479 Łódź");
+                    } else if (k != 0 && k != 27 && (k < 8 || k > 18)) {
+                        System.out.print(" ");
+                    }
+
+                } else {
+                    if (k == 0) {
+                        System.out.print("|");
+                    } else if (k == 27) {
+                        System.out.println("|");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
             }
         }
-
-        System.out.println();
-
-        // 20
-        for (int i = 0; i <= 20; i++) {
-            System.out.print(i + " ");
-        }
-
-        System.out.println();
-
-        // 21
-        for (int i = 10; i >= 1; i--) {
-            System.out.print(i + " ");
-        }
-
-        System.out.println();
-
-        // 22
-        int i = 1;
-
-        while (i <= 10) {
-            System.out.print(i + " ");
-            i++;
-        }
-
-        System.out.println();
-
-        // 23
-        i = 1;
-
-        while (i <= 10) {
-            System.out.print(i + " ");
-            if (i == 5) {
-                break;
-            }
-            i++;
-        }
-
-        System.out.println();
-
-        // 24
-        String[] names = {"Paul", "Martin", "James", "Eve", "Lucy"};
-        for (String n:
-             names) {
-            System.out.println("Hello " + n);
-        }
-
-        // 25
-        for (int j = 0; j < names.length; j++) {
-            System.out.println(names[j]);
-        }
-
-        // 26
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your name:");
-        String input = scanner.nextLine();
-        System.out.println("Hello " + input);
-
-        // 27
-        Scanner scanner1 = new Scanner(System.in);
-        System.out.println("Enter a number:");
-        int number  = scanner1.nextInt();
-        if (number > 200) {
-            System.out.println("It's a huge number");
-        } else if (number < 100) {
-            System.out.println("It's a small number");
-        } else {
-            System.out.println("It's neither huge nor small");
-        }
-
-        // 28
-        printHello();
-
-        // 29
-        printHelloSb(input);
-
-        // 30
-        String toPrint = printHelloSbReturnString("Tom");
-        System.out.println(toPrint);
 
         /*
         1. Napisz w metodzie main operację drukującą "Hello",
@@ -216,6 +287,21 @@ public class Main {
 
 
         */
+
+        // card
+
+        /*
+
+        ############################
+        #                          #
+        #      Jan Kowalski        #
+        #  ul. Grunwaldzka 345/7b  #
+        #     00-950 Warszawa      #
+        #                          #
+        ############################
+
+        */
+
     }
 
     public static void printHello() {
